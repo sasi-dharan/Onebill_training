@@ -7,8 +7,10 @@ public class Hockey {
 	public Hockey() {
 		System.out.println("from the superclass");
 	}
-	public Hockey(int m,int s) {
-		members=m;
-		squad=s;
+	public Hockey(int members,int squad) {
+		//members=m;
+		//squad=s;
+		this.members=members;
+		this.squad=squad;
 }
 }

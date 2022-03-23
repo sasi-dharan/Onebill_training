@@ -9,10 +9,12 @@ public class ForwardDefance extends Hockey {
 	}
 	
 	
-	public ForwardDefance(int members, int squad, int f, int d){
+	public ForwardDefance(int members, int squad, int noOfForward, int noOfDefence){
 		super(members, squad);
-		noOfForward=f;
-		noOfDefence=d;
+		//noOfForward=f;
+		//noOfDefence=d;
+		this.noOfForward=noOfForward;
+		this.noOfDefence=noOfDefence;
 	
     }
 }
