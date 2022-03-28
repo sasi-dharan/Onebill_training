@@ -14,6 +14,7 @@ public class Exercise {
 		int[] a;
 		a= new int[res];
 		a[4]=20;
+		System.out.println(a[4]);
 //		}catch (ArrayIndexOutOfBoundsException e) {
 //			System.out.println("enter valid index");
 //		}catch(ArithmeticException e) {
