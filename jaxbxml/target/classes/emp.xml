@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<employe emp-id="1">
+    <add>
+        <area>ramar street</area>
+        <country>nepal</country>
+        <locality>katmandu</locality>
+        <pincode>1</pincode>
+    </add>
+    <designation>trainee</designation>
+    <name>sd</name>
+    <salary>40000.0</salary>
+</employe>

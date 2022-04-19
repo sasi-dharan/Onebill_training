@@ -1,0 +1,52 @@
+<?xml   version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:util="http://www.springframework.org/schema/util"
+	xsi:schemaLocation="
+        http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+        http://www.springframework.org/schema/util http://www.springframework.org/schema/util/spring-util.xsd"> <!-- bean definitions here -->
+        
+	 <bean class="com.te.springcore.GirlFriend" name="girl1" autowire="byType">
+		<property name="name" value="elisa" />
+		<property name="phoneNumber" value="6858986265"/>
+		
+		
+	</bean>
+
+
+	<bean class="com.te.springcore.BoyFriend" name="boy1" primary="true">
+		<property name="name" value="ram" />
+		<property name="phoneNumber" value="68589878655" />
+	</bean>
+
+	<bean class="com.te.springcore.GirlFriend" name="girl2">
+
+		<property name="name">
+			<value>simran</value>
+		</property>
+		<property name="phoneNumber">
+			<value>21635215</value>
+		</property>
+		<property name="boyFriend" ref="boy2" />
+	</bean>
+
+
+	<bean class="com.te.springcore.BoyFriend" name="boy2" >
+		<property name="name">
+			<value>raju</value>
+		</property>
+		<property name="phoneNumber">
+			<value>2163515</value>
+		</property>
+	</bean>
+	
+	 <bean class="com.te.springcore.GirlFriend" name="girl3">
+		<constructor-arg value="shashi"/>
+			<constructor-arg value="98943128748"/>
+			<constructor-arg ref="boy1"/>
+		
+		
+	</bean>
+	
+
+</beans>  
